@@ -15,17 +15,18 @@
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/baf110ab68.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section class="header">
-      <nav>
+    <section id="top" class="header">
+      <nav id="main-nav">
         <a href="index.html"><img src="images/pawlogo.png" /></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">REVIEWS</a></li>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -40,15 +41,23 @@
     </section>
     
     <!--aboutme-->
-    <section class="aboutus">
-      <h1>Who am I</h1>
+    <section id="aboutme" class="aboutus">
+      <!-- <h1>Who am I</h1> -->
       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>-->
         <div class="infocol">
+          <h1>Who am I</h1>
           <img src="images/pipo.jpg" />
           <h3>My name is Hipolito Nicolas Joachim</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam, similique debitis, delectus cumque dolore earum distinctio impedit saepe hic ex maxime molestias corporis, quos totam dolor ut officiis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maxime, sint perspiciatis amet quis cupiditate? Eos itaque sequi dignissimos. Illum neque excepturi vel numquam! Iste tenetur quidem natus rem nihil? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi porro mollitia numquam rerum necessitatibus perferendis ab? Repudiandae eligendi quae culpa ipsa! Sapiente facilis beatae doloremque nihil dolorem similique, perferendis delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iste odio nihil expedita inventore asperiores, quod voluptatum maxime corrupti! Voluptas saepe sunt, non repellendus quia commodi obcaecati? Iste, suscipit ullam.</p>
-          <a href="https://www.facebook.com/hipolitonicolas.joachim" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <a class="fcbk-icon" href="https://www.facebook.com/hipolitonicolas.joachim" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a class="tw-icon" href="https://twitter.com/pipo_eth" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a class="ig-icon" href="https://www.instagram.com/hipo.joachim/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
           <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
@@ -79,7 +88,7 @@
     </section>
   
     <!--reviews-->
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <h1>What sitters says about us</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
       <div class="row">
@@ -118,6 +127,31 @@
         </div>
       </div>
     </section>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <h3>works</h3>
 
     <!--------Javascrip toggle Menu --------->
     <script>
@@ -164,6 +198,29 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      let navbar = document.getElementById("main-nav");
+      let navPos = navbar.getBoundingClientRect().top;
+      window.addEventListener("scroll", e => {
+        scrollPos = window.scrollY;
+      });
+
+      let timVine = document.getElementById("tim-vine");
+
+window.addEventListener("scroll", e => {
+  let viewportHeight = window.innerHeight;
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    navbar.classList.add('sticky');
+    header.classList.add('navbarOffsetMargin');
+  } else {
+    navbar.classList.remove('sticky');
+    header.classList.remove('navbarOffsetMargin');
+  }
+});
     </script>
   </body>
 </html>
