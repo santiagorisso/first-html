@@ -83,6 +83,11 @@
 
 html {
   scroll-behavior: smooth;
+  background: url(images/Artboard\ 1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 nav {
@@ -240,7 +245,6 @@ nav .fa {
 /*--- info aboutme ---*/
 
 .aboutme-text{
-
   text-align: justify;
 }
 
@@ -255,8 +259,8 @@ nav .fa {
 h1 {
   font-size: 36px;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 p {
@@ -279,7 +283,7 @@ p {
 
 .infocol {
   flex-basis: 31%;
-  background: #fff3f3;
+  background-color: #e5d3fbb8;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
