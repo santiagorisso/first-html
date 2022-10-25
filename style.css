@@ -135,12 +135,12 @@ nav img {
 }
 
 .text-box {
-  width: 70%;
+  width: 75%;
   color: rgb(230, 230, 230);
   background-color: #0000003a;
   border-radius: 40px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -266,7 +266,7 @@ h1 {
 p {
   color: #777;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 22px;
 
   padding-left: 5%;
@@ -317,6 +317,8 @@ h3 {
 }
 
 .review-col {
+  background-color: rgba(255, 255, 255, 0.64);
+  padding: 1.5vh;
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
